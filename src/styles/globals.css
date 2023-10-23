@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html * {
+  font-family: 'Anek Latin', sans-serif;
+}
+
+html *.sec-font {
+  font-family: 'Syne', sans-serif;
+}
+
+body {
+  background-color: #030712;
+}
+
+.card--skin--anim:hover .card--skin--anim--wrapper {
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+}
+
+.card--skin--anim:hover .card--skin--anim--wrapper--img {
+  opacity: 0;
+}
+
+.card--skin--anim:hover .card--skin--anim--img {
+  opacity: 1;
+  transform: translate3d(0%, -30%, 100px);
+}
+
+.card--skin--anim .card--skin--anim--img {
+  opacity: 0;
+  transform: translate3d(0%, 0%, 0px);
+}
+
+.card--skin.rarity-0 {
+  @apply after:bg-[linear-gradient(90deg,rgba(71,85,105,0)0%,rgba(71,85,105,0.6)20%,rgba(71,85,105,0.6)80%,rgba(71,85,105,0)100%)];
+  @apply before:bg-[linear-gradient(90deg,rgba(71,85,105,0)0%,rgba(71,85,105,0.6)20%,rgba(71,85,105,0.6)80%,rgba(71,85,105,0)100%)];
+}
+
+.card--skin.rarity-0 .card--skin--flare {
+  @apply bg-[radial-gradient(circle,rgba(71,85,105,0.4)0%,rgba(71,85,105,0)50%)];
+}
+
+
+.card--skin.rarity-1 {
+  @apply after:bg-[linear-gradient(90deg,rgba(56,189,248,0)0%,rgba(56,189,248,0.6)20%,rgba(56,189,248,0.6)80%,rgba(56,189,248,0)100%)];
+  @apply before:bg-[linear-gradient(90deg,rgba(56,189,248,0)0%,rgba(56,189,248,0.6)20%,rgba(56,189,248,0.6)80%,rgba(56,189,248,0)100%)];
+}
+
+.card--skin.rarity-1 .card--skin--flare {
+  @apply bg-[radial-gradient(circle,rgba(56,189,248,0.4)0%,rgba(56,189,248,0)50%)];
+}
+
+
+.card--skin.rarity-2 {
+  @apply after:bg-[linear-gradient(90deg,rgba(59,130,246,0)0%,rgba(59,130,246,0.6)20%,rgba(59,130,246,0.6)80%,rgba(59,130,246,0)100%)];
+  @apply before:bg-[linear-gradient(90deg,rgba(59,130,246,0)0%,rgba(59,130,246,0.6)20%,rgba(59,130,246,0.6)80%,rgba(59,130,246,0)100%)];
+}
+
+.card--skin.rarity-2 .card--skin--flare {
+  @apply bg-[radial-gradient(circle,rgba(59,130,246,0.4)0%,rgba(59,130,246,0)50%)];
+}
+
+
+.card--skin.rarity-3 {
+  @apply after:bg-[linear-gradient(90deg,rgba(124,58,237,0)0%,rgba(124,58,237,0.6)20%,rgba(124,58,237,0.6)80%,rgba(124,58,237,0)100%)];
+  @apply before:bg-[linear-gradient(90deg,rgba(124,58,237,0)0%,rgba(124,58,237,0.6)20%,rgba(124,58,237,0.6)80%,rgba(124,58,237,0)100%)];
+}
+
+.card--skin.rarity-3 .card--skin--flare {
+  @apply bg-[radial-gradient(circle,rgba(124,58,237,0.4)0%,rgba(124,58,237,0)50%)];
+}
+
+
+.card--skin.rarity-4 {
+  @apply after:bg-[linear-gradient(90deg,rgba(217,70,239,0)0%,rgba(217,70,239,0.6)20%,rgba(217,70,239,0.6)80%,rgba(217,70,239,0)100%)];
+  @apply before:bg-[linear-gradient(90deg,rgba(217,70,239,0)0%,rgba(217,70,239,0.6)20%,rgba(217,70,239,0.6)80%,rgba(217,70,239,0)100%)];
+}
+
+.card--skin.rarity-4 .card--skin--flare {
+  @apply bg-[radial-gradient(circle,rgba(217,70,239,0.4)0%,rgba(217,70,239,0)50%)];
+}
+
+
+.card--skin.rarity-5 {
+  @apply after:bg-[linear-gradient(90deg,rgba(220,38,38,0)0%,rgba(220,38,38,0.6)20%,rgba(220,38,38,0.6)80%,rgba(220,38,38,0)100%)];
+  @apply before:bg-[linear-gradient(90deg,rgba(220,38,38,0)0%,rgba(220,38,38,0.6)20%,rgba(220,38,38,0.6)80%,rgba(220,38,38,0)100%)];
+}
+
+.card--skin.rarity-5 .card--skin--flare {
+  @apply bg-[radial-gradient(circle,rgba(220,38,38,0.4)0%,rgba(220,38,38,0)50%)];
+}
+
+
+.card--skin.rarity-6 {
+  @apply after:bg-[linear-gradient(90deg,rgba(249,115,22,0)0%,rgba(249,115,22,0.6)20%,rgba(249,115,22,0.6)80%,rgba(249,115,22,0)100%)];
+  @apply before:bg-[linear-gradient(90deg,rgba(249,115,22,0)0%,rgba(249,115,22,0.6)20%,rgba(249,115,22,0.6)80%,rgba(249,115,22,0)100%)];
+}
+
+.card--skin.rarity-6 .card--skin--flare {
+  @apply bg-[radial-gradient(circle,rgba(249,115,22,0.4)0%,rgba(249,115,22,0)50%)];
+}
+
+
+.card--skin.rarity-7 {
+  @apply after:bg-[linear-gradient(90deg,rgba(234,179,8,0)0%,rgba(234,179,8,0.6)20%,rgba(234,179,8,0.6)80%,rgba(234,179,8,0)100%)];
+  @apply before:bg-[linear-gradient(90deg,rgba(234,179,8,0)0%,rgba(234,179,8,0.6)20%,rgba(234,179,8,0.6)80%,rgba(234,179,8,0)100%)];
+}
+
+.card--skin.rarity-7 .card--skin--flare {
+  @apply bg-[radial-gradient(circle,rgba(234,179,8,0.4)0%,rgba(234,179,8,0)50%)];
+}
+
