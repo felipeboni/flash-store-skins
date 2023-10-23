@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }) {
   const router = useRouter();
 
   return (
-    <SessionProvider session={pageProps.session}>
+    // <SessionProvider session={pageProps.session}>
       <CartContextProvider>
         {!["/auth/signin"].includes(router.pathname) ? (
           <Layout>
@@ -20,6 +20,6 @@ export default function App({ Component, pageProps }) {
         )}
         <Toaster />
       </CartContextProvider>
-    </SessionProvider>
+    // </SessionProvider>
   );
 }
